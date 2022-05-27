@@ -125,9 +125,10 @@ textarea::placeholder {
     color:lightgrey;
     font-size: x-large;
     text-transform: none;
-    
+    box-sizing: none;
     
 }
+
 
 .boton:active {
     opacity: 80%;
