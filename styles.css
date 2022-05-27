@@ -1,0 +1,271 @@
+header {
+    margin-top: 2%;
+    margin-left: 2%;
+    cursor: pointer;
+    transition: all 1s;
+    transform: rotate(360deg);
+}
+img {
+    
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+     transition: transform .8s ease-in-out;
+  }
+  img:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.caja2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    align-items: center;
+   
+}
+
+.caja3 {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    align-items: center;
+    
+}
+
+.invisible {
+    display:none !important;
+}
+
+.boton1 {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #0A3871;
+    border: none;
+    color: white;
+    border-radius: 24px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    box-sizing: none;
+    font-size: 20px;
+   
+}
+
+.boton1:hover {
+    background-color: #48bedc;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    transition: 1s;
+    transform: scale(1.1); 
+    
+}
+
+div {
+    margin-bottom: 1%;
+}
+
+.boton2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: #E5E5E5;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    
+    
+}
+
+.boton2:hover {
+    background-color: #48bedc;
+    border: none;
+    color: white;
+    transition: 1s;
+    transform: scale(1.1);
+    
+}
+
+button:active {
+    opacity: 80%;
+}
+
+.boton {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    color: lightgrey;
+    font-size: x-large;
+    text-transform: uppercase;
+   
+}
+
+textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color:lightgrey;
+    font-size: x-large;
+    text-transform: none;
+    
+    
+}
+
+.boton:active {
+    opacity: 80%;
+}
+
+.boton3 {
+    background-color: #0A3871;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    
+   
+}
+
+.boton3:hover {
+    background-color: #E5E5E5;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.boton4 {
+    background-color: #E5E5E5;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-size: 18px;
+    cursor: pointer;
+    font: bold;
+   
+}
+
+.boton4:hover {
+    background-color: #0A3871;
+    color: white;
+    border: none;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 150px;
+    color: lightblue;
+    font-size: 20px;
+    
+  
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+    background-image : url("./img/black-brick-wall-textured-background.jpg");
+    
+}
+
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+  margin: none;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat', sans-serif;
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+    font-size: 70px;
+    margin: none;
+    margin-top: -150px;
+    
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+    
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke:darkgoldenrod;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -4.5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/*Responsive*/
+@media screen and (max-width:480px){
+    
+    .boton3{
+        margin-left: 50px;
+    }
+    
+    .boton4{
+        margin-left: 50px;
+    }
+
+    #cancelar{
+        margin-left: 90px;
+    }
+
+    #juego{
+
+        margin-left: 330px;
+
+   }
+
+    .footer{
+        margin-top: 150px;
+        margin-left: 160px;
+    }
+
+}

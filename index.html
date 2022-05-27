@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body >
+    
+     
+    <main>
+
+        <header>
+            <img src="./img/Vector.png" alt="Logo Alura">           
+        </header>
+
+        <div class="container">
+            <svg viewBox="0 0 960 300">
+              <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">JUEGO DEL AHORCADO</text>
+              </symbol>
+          
+              <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+              </g>
+            </svg>
+          </div>
+
+        <div id="inicio" class="caja"> 
+            <div>
+                <button class="boton1" id="boton-iniciar">Iniciar Juego</button>
+            </div>
+            <div>
+                <button class="boton2" id="agregar-palabra">Agregar nueva palabra</button>
+            </div>
+        </div>
+
+
+        <div id="a-palabra" class="caja2 invisible">
+            <div>
+                <textarea name="palabra" id="palabra"  placeholder="Ingrese una palabra"></textarea>
+            </div>
+            <div>
+                <button class="boton boton3" id="guardar">Guardar y empezar</button>
+                <button class="boton boton4" id="cancelar">Cancelar</button>
+            </div>
+            </div>
+
+            <div id="juego" class="caja3 invisible">
+                <div>
+                    <canvas id="ahorcado" height="400px" width="800px"></canvas>
+                </div>
+                <div>
+                    <button class="boton boton3" id="nuevo-juego">Nuevo juego</button>
+                    <button class="boton boton4" id="desistir">Desistir</button>
+                </div>
+            </div>       
+    </main>
+    <footer>
+        <p class="derechos">&copy MarianaI todos los derechos reservados - 2022</p>
+
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+<script src="muneco.js"></script>
+<script src="validarLetra.js"></script>
+<script src="dibujarLetra.js"></script>
+<script src="empezarJuego.js"></script>
+<script src="ganadorPerdedor.js"></script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
