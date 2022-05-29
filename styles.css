@@ -125,8 +125,13 @@ textarea::placeholder {
     color:lightgrey;
     font-size: x-large;
     text-transform: none;
-    box-sizing: none;
     
+}
+
+#letra{
+    resize: none;
+    border: none;
+
 }
 
 
@@ -245,13 +250,29 @@ svg {
 
 /*Responsive*/
 @media screen and (max-width:480px){
+
+    
     
     .boton3{
-        margin-left: 50px;
+        width: 270px;
+        margin-top: 40px;
+        color: darkorange;
+       
     }
     
     .boton4{
+        width: 350;
+        height: 55px;
+        color: darkorange;
+        margin-top: 30px;
+        margin-left: 70px;
+       
+    }
+
+    #guardar{
+        height: 65px;
         margin-left: 50px;
+        text-align: center;
     }
 
     #cancelar{
@@ -259,14 +280,12 @@ svg {
     }
 
     #juego{
-
-        margin-left: 330px;
-
+        margin-left: 430px;
    }
 
     .footer{
-        margin-top: 150px;
-        margin-left: 160px;
+        margin-top: 500px;
+        margin-left: 250px;
     }
 
 }
