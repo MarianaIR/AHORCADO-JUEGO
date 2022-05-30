@@ -63,10 +63,13 @@
                     <canvas id="ahorcado" height="400px" width="800px"></canvas>
                 </div>
                 <div>
-                    <label for="tentacles">Number of tentacles (10-100):</label>
+                    <input id="text" type="text" name="text" list="letras">
+<span class="validity"></span>
 
-<input type="text" id="tentacles" name="tentacles"
-       min="10" max="100">
+<datalist id="letras">
+  <option value="Q, W, , E">
+  
+  </datalist>
                 </div>
                 <div>
                     <button class="boton boton3" id="nuevo-juego">Nuevo juego</button>
