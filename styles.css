@@ -117,12 +117,7 @@ textarea {
     color: lightgrey;
     font-size: x-large;
     text-transform: uppercase;
-    resize: none;
-    border: none;
     
-    
-    
-   
 }
 
 textarea::placeholder {
