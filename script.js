@@ -82,7 +82,7 @@ botonIniciar.addEventListener("click", () => {
       flag = true;
     });
     
-    window.addEventListener("keypress", (element) => {
+    window.addEventListener("keydown", (element) => {
       if (flag && validarLetra(element.key) && contador < 9) {
         if (!listadoLetras.includes(element.key.toUpperCase())) {
           listadoLetras.push(element.key.toUpperCase());
