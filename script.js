@@ -22,7 +22,7 @@ let listaDePalabras = [
 ];
 
 let palabra = document.querySelector("#palabra");
-let letra = document.querySelector("#letra");
+let letra = document.querySelector("#letra");//
 let tablero = document.querySelector("canvas");
 let pincel = ahorcado.getContext("2d");
 let contador = 0;
@@ -44,6 +44,7 @@ botonIniciar.addEventListener("click", () => {
   agregarPalabra.addEventListener("click", () => {
     inicio.classList.add("invisible");
     aPalabra.classList.remove("invisible");
+    juego.classList.add("invisible");//
     flag = false;
   });
   
