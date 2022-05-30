@@ -77,12 +77,12 @@ botonIniciar.addEventListener("click", () => {
       flag = false;
     });
     
-    nuevoJuego.addEventListener("click", () => {
+   nuevoJuego.addEventListener("click", () => {
       empezarJuego();
       flag = true;
     });
     
-    window.addEventListener("keydown", (element) => {
+    window.addEventListener("keypress", (element) => {
       if (flag && validarLetra(element.key) && contador < 9) {
         if (!listadoLetras.includes(element.key.toUpperCase())) {
           listadoLetras.push(element.key.toUpperCase());
