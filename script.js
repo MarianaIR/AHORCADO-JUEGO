@@ -22,6 +22,7 @@ let listaDePalabras = [
 ];
 
 let palabra = document.querySelector("#palabra");
+let letra = document.querySelector("#letra");
 let tablero = document.querySelector("canvas");
 let pincel = ahorcado.getContext("2d");
 let contador = 0;
@@ -101,4 +102,5 @@ botonIniciar.addEventListener("click", () => {
       }
     });
 
-   
+
+    
