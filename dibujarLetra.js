@@ -1,6 +1,6 @@
 function dibujarLetra(letra) {
-    let indicador = 0;
-    for(let i = 0; i < palabraJuego.length; i++) {
+    var indicador = 0;
+    for(var i = 0; i < palabraJuego.length; i++) {
         if(letra == palabraJuego[i] && palabraJuego.join("") != palabraEnJuego.join("")) {
             pincel.beginPath();
             pincel.fillStyle = "lightblue";

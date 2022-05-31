@@ -13,9 +13,9 @@ function empezarJuego() {
     listadoLetras = [];
     esGanador = false;
     palabraEnJuego = [];
-    let numero = Math.floor(Math.random()*listaDePalabras.length);
+    var numero = Math.floor(Math.random()*listaDePalabras.length);
     palabraJuego = listaDePalabras[numero].toUpperCase().split("");
-    for(let i=0; i < palabraJuego.length; i++) {
+    for(var i=0; i < palabraJuego.length; i++) {
         pincel.moveTo((300 + (60 * i)), 300);
         pincel.lineTo((350 + (60 * i)), 300);
         pincel.stroke();

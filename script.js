@@ -1,18 +1,18 @@
 // Botones 
-let botonIniciar = document.querySelector("#boton-iniciar");
-let agregarPalabra = document.querySelector("#agregar-palabra");
-let guardar = document.querySelector("#guardar");
-let cancelar = document.querySelector("#cancelar");
-let nuevoJuego = document.querySelector("#nuevo-juego");
-let desistir = document.querySelector("#desistir");
+var botonIniciar = document.querySelector("#boton-iniciar");
+var agregarPalabra = document.querySelector("#agregar-palabra");
+var guardar = document.querySelector("#guardar");
+var cancelar = document.querySelector("#cancelar");
+var nuevoJuego = document.querySelector("#nuevo-juego");
+var desistir = document.querySelector("#desistir");
 
-// Secciones juego
-let inicio = document.querySelector("#inicio");
-let aPalabra = document.querySelector("#a-palabra");
-let juego = document.querySelector("#juego");
-let footer = document.querySelector("footer");
+// Sec. juego
+var inicio = document.querySelector("#inicio");
+var aPalabra = document.querySelector("#a-palabra");
+var juego = document.querySelector("#juego");
+var footer = document.querySelector("footer");
 
-let listaDePalabras = [
+var listaDePalabras = [
   "ORACLE",
   "ALURA",
   "JAVA",
@@ -21,16 +21,17 @@ let listaDePalabras = [
   "GITHUB",
 ];
 
-let palabra = document.querySelector("#palabra");
-let tablero = document.querySelector("canvas");
-let pincel = ahorcado.getContext("2d");
-let contador = 0;
-let flag = false;
-let palabraJuego;
-let contadorLetraError = 0;
-let listadoLetras = [];
-let palabraEnJuego = [];
-let esGanador = false;
+var palabra = document.querySelector("#palabra");
+var letra = document.querySelector("#letra");
+var tablero = document.querySelector("canvas");
+var pincel = ahorcado.getContext("2d");
+var contador = 0;
+var flag = false;
+var palabraJuego;
+var contadorLetraError = 0;
+var listadoLetras = [];
+var palabraEnJuego = [];
+var esGanador = false;
 
 botonIniciar.addEventListener("click", () => {
     inicio.classList.add("invisible");
