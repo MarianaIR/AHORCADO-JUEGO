@@ -250,29 +250,31 @@ svg {
     
     
     .boton3{
-        width: 270px;
+        width: 290px;
         margin-top: 40px;
         color: darkorange;
        
     }
     
     .boton4{
-        width: 350;
+        width: 300px;
         height: 55px;
         color: darkorange;
         margin-top: 30px;
-        margin-left: 70px;
+        margin-left: 5px;
        
     }
 
     #guardar{
         height: 65px;
-        margin-left: 50px;
+        margin-left: 30px;
         text-align: center;
     }
 
     #cancelar{
-        margin-left: 90px;
+        margin-left: 25px;
+        height: 60px; 
+        
     }
 
     #juego{
@@ -280,7 +282,7 @@ svg {
    }
 
     .footer{
-        margin-top: 500px;
+        margin-top: 550px;
         margin-left: 250px;
     }
 

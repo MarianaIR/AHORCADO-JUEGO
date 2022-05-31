@@ -17,3 +17,5 @@ function validarPalabra(letraIngresada) {
         return true;
     }
 }
+
+
