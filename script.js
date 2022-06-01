@@ -103,4 +103,21 @@ botonIniciar.addEventListener("click", () => {
     });
 
 
+    guardar.addEventListener("click", () => {
+
+      if(!(letra.value.length > 8)) {
+          if(validarPalabra(letra.value.toUpperCase())) {
+            listaDePalabras.push(letra.value.toUpperCase());
+            aPalabra.classList.add("invisible");
+            juego.classList.remove("invisible");
+            footer.classList.add("footer");
+            empezarJuego();
+            flag = true;
+          }
+        } else {
+          swal("¡Palabra extensa!", `La palabra debe tener maximo 8 letras y tiene ${palabra.value.length} letras.`, "warning");
+        }
+      });
+
+
     
