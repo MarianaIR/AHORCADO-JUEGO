@@ -1,3 +1,4 @@
+//Funcion muneco con Canvas
 function crearMuneco(counter) {
     if (counter == 0) {
         pincel.lineWidth = 5;

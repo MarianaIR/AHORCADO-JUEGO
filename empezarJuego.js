@@ -1,6 +1,7 @@
+// Tablero, Num Aleatorio
 function empezarJuego() {
     pincel.clearRect(0, 0, tablero.width, tablero.height);
-    pincel.lineWidth = 4;
+    pincel.lineWidth = 5;
     pincel.strokeStyle = "#0A3871";
     pincel.beginPath();
     pincel.moveTo(250, 300);
